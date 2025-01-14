@@ -1,0 +1,29 @@
+type: object
+properties: 
+  id:
+    type: string
+    format: uuid
+    description: Unique identifier for the payment method
+  displayName:
+    type: string
+    minLength: 2
+    maxLength: 100
+  cardNumber:
+    type: integer
+    example: 1234567890123456
+  expiryMonth:
+    type: integer
+    example: 7
+  expiryYear:
+    type: integer
+    example: 26
+  cvv:
+    type: integer
+    example: 123
+  dateCreated:
+    type: string
+    format: date-time
+  dateUpdated:
+    type: string
+    format: date-time
+  

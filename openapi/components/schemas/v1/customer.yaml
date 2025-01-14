@@ -1,0 +1,30 @@
+type: object
+properties:
+  id:
+    type: string
+    format: uuid
+    description: Unique identifier represemting a specific customer
+  name:
+    $ref: 'name.yaml'
+  shipToAddress:
+    $ref: 'address.yaml'
+  billToAddress:
+    $ref: 'address.yaml'
+  email:
+    type: string
+    minLength: 3
+    maxLength: 255
+    example: madegomezmoreira@gmail.com
+  phone:
+    type: string
+    minLength: 9
+    maxLength: 15
+    example: '616280417'
+  paymentMethods:
+    type: array
+    items:
+      $ref: 'payment_method.yaml'
+required: 
+  - name
+  - shipToAddress
+  - billToAddress
