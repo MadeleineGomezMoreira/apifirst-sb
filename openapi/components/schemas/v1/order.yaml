@@ -5,7 +5,7 @@ properties:
     format: uuid
     description: The unique identifier of the order.
   customer:
-    $ref: 'customer.yaml'
+    $ref: 'order_customer.yaml'
   orderStatus:
     type: string
   shipmentInfo:
