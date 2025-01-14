@@ -1,0 +1,12 @@
+type: object
+properties:
+  id:
+    type: string
+    format: uuid
+    description: Unique identifier representing a specific customer
+  addressLine1:
+    type: string
+    description: Address Line 1
+  addressLine2:
+    type: string
+    description: Address Line 2
