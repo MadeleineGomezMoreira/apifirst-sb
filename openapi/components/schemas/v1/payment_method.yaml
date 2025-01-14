@@ -10,12 +10,16 @@ properties:
     maxLength: 100
   cardNumber:
     type: integer
+    example: 1234567890123456
   expiryMonth:
     type: integer
+    example: 7
   expiryYear:
     type: integer
+    example: 26
   cvv:
     type: integer
+    example: 123
   dateCreated:
     type: string
     format: date-time
